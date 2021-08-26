@@ -1,0 +1,147 @@
+<mat-toolbar-row>
+  <div class="header">
+    <form [formGroup]="group" (ngSubmit)="onSubmit(cityName)">
+      <div id="form-field">
+        <mat-form-field  appearance="outline">
+          <mat-label for="city">{{cityLabelOne}}</mat-label>
+          <input matInput id="city" type="text" formControlName="cityName" #cityName>
+        </mat-form-field>
+      </div>
+    </form>
+    <div>
+      <div class="icons">
+        <mat-form-field>
+          <mat-select [(value)]="selected" [ngClass]="selected">
+            <mat-option style="background: #39796b; padding-left: 2rem; color: #0f2d3b; font-family: 'Source Code Pro'"
+                        (click)="translateEng()" value="en">En
+              <img style="margin-left: 1.1rem" with="20" height="20" src="assets/flags/united-kingdom.png">
+            </mat-option>
+            <mat-option style="background: #39796b; padding-left: 2rem; color: #0f2d3b; font-family: 'Source Code Pro'"
+                        (click)="translateRu()" value="ru">Ru
+              <img style="margin-left: 1rem" with="20" height="20" src="assets/flags/russia.png">
+            </mat-option>
+            <mat-option style="background: #39796b; padding-left: 2rem; color: #0f2d3b; font-family: 'Source Code Pro'"
+                        (click)="translateFr()" value="fr">Fr
+              <img style="margin-left: 1.25rem" with="20" height="20" src="assets/flags/france.png">
+            </mat-option>
+            <mat-option style="background: #39796b; padding-left: 2rem; color: #0f2d3b; font-family: 'Source Code Pro'"
+                        (click)="translateGer()" value="de">De
+              <img style="margin-left: 1rem" with="20" height="20" src="assets/flags/germany.png">
+            </mat-option>
+            <mat-option style="background: #39796b; padding-left: 2rem; color: #0f2d3b; font-family: 'Source Code Pro'"
+                        (click)="translateEsp()" value="es">Es
+              <img style="margin-left: 1.15rem" with="20" height="20" src="assets/flags/spain.png">
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div>
+          <fa-icon class="info" (click)="openSheet()" [icon]="info"></fa-icon>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="five-day-forecast">
+      <h2>{{fiveDaysHeader}}</h2>
+      <mat-divider></mat-divider>
+      <div>
+        <div>
+          <p>{{fiveForecastDaysOneTranslate}}</p>
+          <img src="assets/images/{{forecastTimeOneImg}}@4x.png">
+        </div>
+        <p>{{forecastTimeOneTemp | number: '1.0-0'}} °C</p>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <div>
+          <p>{{fiveForecastDaysTwoTranslate}}</p>
+          <img src="assets/images/{{forecastTimeOneImgS}}@4x.png">
+        </div>
+        <p>{{forecastTimeOneTempS | number: '1.0-0'}} °C</p>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <div>
+          <p>{{fiveForecastDaysThreeTranslate}}</p>
+          <img src="assets/images/{{forecastTimeOneImgT}}@4x.png">
+        </div>
+        <p>{{forecastTimeOneTempT | number: '1.0-0'}} °C</p>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <div>
+          <p>{{fiveForecastDaysFourTranslate}}</p>
+          <img src="assets/images/{{forecastTimeOneImgF}}@4x.png">
+        </div>
+        <p>{{forecastTimeOneTempF | number: '1.0-0'}} °C</p>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <div>
+          <p>{{fiveForecastDaysFiveTranslate}}</p>
+          <img src="assets/images/{{forecastTimeOneImgFi}}@4x.png">
+        </div>
+        <p>{{forecastTimeOneTempFi | number: '1.0-0'}} °C</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="city-cover">
+    <img id="imgUrl" src="{{imgUrl}}">
+    <div class="city">
+      <div class="badgeCity">
+        <div><p>{{cityOne}}</p>
+          <p>{{currentCityTime | date: 'HH:'}}{{minutes | date:'mm'}}</p></div>
+      </div>
+      <div class="badge">
+        <div><p>{{local}}</p>
+          <p>{{currentTime | date: 'HH:mm:ss' }}</p></div>
+      </div>
+      <h1>{{cityLocationOne}}{{countryOne}}</h1>
+      <img  id="icon" src="./assets/images/{{img}}@4x.png">
+      <div class="current-weather">
+        <h2>{{(cityWeather - 273.15)| number: '1.0-0' }}  </h2>
+        <h2>°C</h2>
+        <h2>|</h2>
+        <h2>{{cityDesOne}}</h2>
+      </div>
+      <div class="weather-details">
+        <div class="temps">
+          <div>
+            <fa-icon [icon]="tempLow"></fa-icon>
+            <p>{{(tempMin - 273.15 | number: '1.1-1')}} °C</p>
+          </div>
+          <div>
+            <fa-icon [icon]="tempHigh"></fa-icon>
+            <p>{{(tempMax - 273.15 | number: '1.0-0')}} °C</p>
+          </div>
+          <div>
+            <fa-icon [icon]="tint"></fa-icon>
+            <p>{{humidity}} %</p>
+          </div>
+        </div>
+        <div class="winds">
+          <div>
+            <i-feather name="sunrise"></i-feather>
+            <p>{{sunRise | date: 'HH:mm:ss'}}</p>
+          </div>
+          <div>
+            <i-feather name="sunset"></i-feather>
+            <p>{{sunSet | date: 'HH:mm:ss'}}</p>
+          </div>
+          <div>
+            <i-feather name="wind"></i-feather>
+            <p>{{windSpeed | number: '1.0-1'}}{{windSpeedOne}}</p>
+          </div>
+          <div>
+            <i-feather name="compass"></i-feather>
+            <p>{{windDeg}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-toolbar-row>
+
+
+

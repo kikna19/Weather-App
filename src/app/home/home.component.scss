@@ -1,0 +1,1502 @@
+.mat-toolbar-row {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  width: 100%;
+  height: 89%;
+  background: #02475E;
+
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 35%;
+    height: 100%;
+    margin-top: -1.5rem;
+
+
+    form {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      width: 100%;
+      height: 15%;
+
+      ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+        background-color: #ab7738;
+        border-radius: 16rem;
+        color: #122f3a;
+        outline: none;
+        transition: none !important;
+        -webkit-box-shadow: 0px 5px 14px 3px #000000;
+        box-shadow: 0px 5px 14px 3px #000000;
+      }
+
+      ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
+        background-color: #122f3a;
+        border-radius: 16rem;
+      }
+
+
+      ::ng-deep .mat-form-field-flex:hover .mat-form-field-outline {
+        outline: none;
+        transition: none !important;
+      }
+
+      ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
+        color: #ab7738 !important;
+        outline: none !important;
+        transition: none !important;
+      }
+
+      ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start {
+        border-radius: 5rem 0 0 5rem !important;
+        min-width: 2rem;
+      }
+
+      ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end {
+        border-radius: 0 5rem 5rem 0 !important;
+
+      }
+
+      ::ng-deep .mat-focused .mat-form-field-label {
+        color: #ab7738 !important;
+      }
+
+      ::ng-deep.mat-form-field-underline {
+        outline: none !important;
+        opacity: 0 !important;
+      }
+
+
+      ::ng-deep .mat-form-field {
+        border-radius: 15rem;
+        width: 15rem;
+        height: 3.7rem;
+
+
+        .mat-input-element {
+          font-size: 1rem;
+          font-family: "Source Code Pro";
+          text-transform: capitalize;
+          width: 70%;
+          padding-left: 2rem;
+        }
+
+        .mat-form-field-label {
+          font-family: "Snell Roundhand";
+          display: inline-flex;
+          align-items: start;
+          font-weight: 900;
+          margin-left: 2rem;
+          color: #122f3a;
+          height: 1.3rem;
+          font-size: .9rem;
+          text-transform: capitalize;
+        }
+
+
+      }
+    }
+
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 10rem;
+        height: 3.7rem;
+        margin-left: .5rem;
+
+
+        ::ng-deep .mat-form-field {
+          padding-bottom: 1rem;
+          width: 5rem;
+          height: 3.7rem;
+
+
+          .en {
+            padding-left: .5rem;
+            padding-top: .6rem;
+            background-position-x: 3rem;
+            background-position-y: .45rem;
+            background-repeat: no-repeat;
+            background-size: 1.1rem;
+            background-image: url('../../assets/flags/united-kingdom.png');
+            font-family: "Arial Black";
+          }
+
+          .ru {
+            padding-left: .5rem;
+            padding-top: .6rem;
+            background-position-x: 3rem;
+            background-position-y: .45rem;
+            background-repeat: no-repeat;
+            background-size: 1.1rem;
+            background-image: url('../../assets/flags/russia.png');
+            font-family: "Arial Black";
+          }
+
+          .fr {
+            padding-left: .5rem;
+            padding-top: .6rem;
+            background-position-x: 3rem;
+            background-position-y: .45rem;
+            background-repeat: no-repeat;
+            background-size: 1.1rem;
+            background-image: url('../../assets/flags/france.png');
+            font-family: "Arial Black";
+          }
+
+          .de {
+            padding-left: .5rem;
+            padding-top: .6rem;
+            background-position-x: 3rem;
+            background-position-y: .45rem;
+            background-repeat: no-repeat;
+            background-size: 1.1rem;
+            background-image: url('../../assets/flags/germany.png');
+            font-family: "Arial Black";
+          }
+
+          .es {
+            padding-left: .5rem;
+            padding-top: .6rem;
+            background-position-x: 3rem;
+            background-position-y: .45rem;
+            background-repeat: no-repeat;
+            background-size: 1.1rem;
+            background-image: url('../../assets/flags/spain.png');
+            font-family: "Arial Black";
+          }
+
+
+        }
+
+
+      }
+
+      .info {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: .2rem;
+        color: #4d949d;
+        cursor: pointer;
+      }
+
+    }
+
+
+    .five-day-forecast {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-direction: column;
+      width: 100%;
+      height: 23.6rem;
+      background: #b99978;
+      padding-top: 1rem;
+      margin-top: 1.5rem;
+      margin-left: .5rem;
+      border-radius: 1rem;
+      border: .2rem solid #02475E;
+      -webkit-box-shadow: 0px 5px 14px 3px #000000;
+      box-shadow: 0px 5px 14px 3px #000000;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        height: 3.9rem;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          width: 12rem;
+          height: 100%;
+
+          img {
+            height: 4rem;
+          }
+
+          p {
+            font-family: "Arial Black";
+            margin-top: .5rem;
+          }
+        }
+
+        p:nth-child(2) {
+          margin-top: .5rem;
+          font-family: Verdana;
+        }
+
+      }
+
+      h2 {
+        text-transform: uppercase;
+        color: #122f3a;
+        font-family: "Source Code Pro";
+      }
+
+      .mat-divider {
+        width: 100%;
+        background-color: black !important;
+      }
+    }
+
+
+  }
+
+  .city-cover {
+    position: relative;
+    width: 60%;
+    height: 34rem;
+
+    #imgUrl {
+      position: absolute;
+      top: .2rem;
+      right: -.2rem;
+      width: 100%;
+      height: 100%;
+      opacity: .2;
+      border-radius: .8rem;
+      z-index: 1;
+    }
+
+    .city {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: start;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      border: .2rem solid #02475E;
+      background: #122f3a;
+      -webkit-box-shadow: 0px 5px 14px 3px #000000;
+      box-shadow: 0px 5px 14px 3px #000000;
+
+      h1 {
+        font-family: "Mukta Mahee";
+        font-size: 2rem;
+      }
+
+      .current-weather {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 10rem;
+        height: 2rem;
+
+        h2:nth-child(1) {
+          font-size: 2rem;
+          font-family: "Arial Black";
+          margin-top: .1rem;
+        }
+
+        h2:nth-child(2) {
+          margin-top: .15rem;
+          margin-left: .6rem;
+          margin-right: 1rem;
+          font-family: "Source Code Pro";
+          color: #cc3a3a;
+          font-size: 2rem;
+        }
+
+        h2:nth-child(3) {
+          font-size: 2rem;
+
+        }
+
+        h2:nth-child(4) {
+          font-size: 2rem;
+          margin-left: .6rem;
+          font-family: "Source Code Pro";
+          color: #459a90;
+          margin-top: .1rem;
+          z-index: 1;
+        }
+      }
+
+      .badgeCity {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        top: -1.5rem;
+        left: 2rem;
+        width: 16rem;
+        height: 3rem;
+        background: #2f4f56;
+        border-radius: 5rem;
+        border: .2rem solid #122f3a;
+        z-index: 1;
+        -webkit-box-shadow: 0px 5px 14px 1px #ab7738;
+        box-shadow: 0px 5px 14px 1px #ab7738;
+
+        div {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: row;
+          color: #86822b;
+          font-family: "Snell Roundhand";
+          margin-top: .5rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          width: 45%;
+
+          p:nth-child(1) {
+            text-transform: capitalize;
+            margin-right: .2rem;
+          }
+        }
+      }
+
+
+      .badge {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        top: -1.5rem;
+        right: 2rem;
+        width: 17rem;
+        height: 3rem;
+        background: #abab34;
+        border-radius: 5rem;
+        border: .2rem solid #122f3a;
+        z-index: 1;
+        -webkit-box-shadow: 0px 5px 14px 1px #ab7738;
+        box-shadow: 0px 5px 14px 1px #ab7738;
+
+
+        div {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: row;
+          color: darkred;
+          font-family: "Snell Roundhand";
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-top: .5rem;
+          width: 55%;
+
+          p:nth-child(1) {
+            text-transform: capitalize;
+            margin-right: .2rem;
+          }
+        }
+      }
+
+      h1 {
+        margin-top: 2rem;
+
+      }
+
+      .weather-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 80%;
+        height: 15rem;
+        background: #122f3a;
+
+        div:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+
+          fa-icon {
+            font-size: 1.5rem;
+            margin-bottom: 1.4rem;
+            margin-right: 1rem;
+          }
+
+          div:nth-child(1) {
+            color: #5787c7;
+          }
+
+          div:nth-child(2) {
+            color: darkred;
+          }
+
+          div:nth-child(3) {
+            color: rgba(245, 245, 245, 0.65);
+
+            fa-icon {
+              margin-right: 1.5rem;
+            }
+          }
+
+          div {
+            display: flex;
+            flex-direction: row;
+
+            p {
+              font-family: "Arial Black";
+            }
+          }
+        }
+
+        div:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+
+          i-feather {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            margin-right: 1rem;
+            font-family: "Arial Black";
+          }
+
+          div:nth-child(1) {
+            color: #ab7738;
+          }
+
+          div:nth-child(2) {
+            color: #8d5614;
+          }
+
+          div:nth-child(3) {
+            color: #579d4d;
+          }
+
+          div:nth-child(4) {
+            color: #4d949d;
+          }
+
+          div {
+            display: flex;
+            flex-direction: row;
+
+            p {
+              margin-top: .7rem;
+              font-family: "Arial Black";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1125px) {
+  #form-field {
+
+    ::ng-deep .mat-form-field {
+     margin-left: 7rem;
+    }
+  }
+
+}
+@media (min-width: 1220px) {
+  #form-field{
+
+    ::ng-deep .mat-form-field {
+      margin-left: 8rem;
+    }
+  }
+
+}
+
+
+@media (max-width: 1125px) {
+  .five-day-forecast {
+    margin-left: -.3rem !important;
+  }
+
+  .city {
+    padding-top: 2%;
+    height: 98% !important;
+  }
+
+}
+
+@media (max-width: 1080px) {
+  .badgeCity {
+    width: 14rem !important;
+
+  }
+  .badge {
+    width: 15rem !important;
+  }
+
+}
+
+
+@media (max-width: 940px) {
+  .badgeCity {
+    left: 1rem !important;
+
+  }
+  .badge {
+    right: 1rem !important;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+
+  #form-field {
+    width: 50%;
+    position: absolute;
+    left: 6.1rem;
+
+    ::ng-deep .mat-form-field {
+      width: 16rem !important;
+    }
+  }
+
+  mat-toolbar-row {
+    height: 70rem !important;
+  }
+
+  .five-day-forecast {
+    position: absolute;
+    top: 45rem;
+    left: 3.2rem !important;
+    width: 90% !important;
+
+    div {
+      div {
+        width: 20rem !important;
+      }
+    }
+  }
+
+  .city-cover {
+    position: absolute;
+    top: 5rem;
+    left: -2.7rem;
+    min-width: 90% !important;
+  }
+
+  #imgUrl {
+    height: 101% !important;
+  }
+
+  .badgeCity {
+    left: 3rem !important;
+    width: 16rem !important;
+
+  }
+  .badge {
+    right: 3rem !important;
+    width: 17rem !important;
+  }
+
+
+  .icons {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 8rem;
+    z-index: 1 !important;
+  }
+
+}
+
+@media (max-width: 870px) {
+  #form-field {
+    left: 6rem;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .five-day-forecast {
+    left: 3rem !important;
+  }
+
+}
+
+@media (max-width: 830px) {
+  .five-day-forecast {
+    left: 2.8rem !important;
+  }
+}
+
+@media (max-width: 820px) {
+  #form-field {
+    left: 5.8rem;
+  }
+
+}
+
+@media (max-width: 780px) {
+  #form-field {
+    left: 5.6rem;
+  }
+  .five-day-forecast {
+    left: 2.5rem !important;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .city-cover {
+    left: -2.6rem;
+  }
+  #form-field {
+    left: 5.4rem;
+  }
+  .five-day-forecast {
+    left: 2.5rem !important;
+  }
+
+}
+
+
+@media (max-width: 740px) {
+  .badgeCity {
+    width: 14rem !important;
+
+  }
+  .badge {
+    width: 15rem !important;
+  }
+
+
+  #form-field {
+    left: 5.4rem;
+
+    ::ng-deep .mat-form-field {
+      width: 14rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 2.2rem !important;
+  }
+
+}
+
+@media (max-width: 730px) {
+
+  #form-field {
+    left: 5.4rem;
+
+  }
+}
+
+@media (max-width: 715px) {
+
+  .city-cover {
+    left: -2.5rem;
+  }
+  #form-field {
+    left: 5.4rem;
+  }
+  .five-day-forecast {
+    left: 2.3rem !important;
+  }
+
+}
+
+@media (max-width: 695px) {
+
+  .city-cover {
+    left: -2.4rem;
+  }
+  #form-field {
+    left: 5.4rem;
+  }
+  .five-day-forecast {
+    left: 2.4rem !important;
+  }
+
+}
+
+@media (max-width: 660px) {
+
+  .city-cover {
+    left: -2.3rem;
+  }
+  #form-field {
+    left: 4.6rem;
+  }
+  .five-day-forecast {
+    left: 2.3rem !important;
+  }
+  .badgeCity {
+    left: 2.5rem !important;
+    width: 14rem !important;
+
+  }
+  .badge {
+    right: 2.5rem !important;
+    width: 15rem !important;
+  }
+
+
+}
+
+@media (max-width: 640px) {
+
+  .city-cover {
+    left: -2.2rem;
+  }
+  #form-field {
+    left: 4.6rem;
+
+    ::ng-deep .mat-form-field {
+      width: 13rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 2.2rem !important;
+  }
+  .badgeCity {
+    left: 2.5rem !important;
+    width: 13rem !important;
+
+  }
+  .badge {
+    right: 2.5rem !important;
+    width: 14rem !important;
+  }
+
+
+}
+
+@media (max-width: 620px) {
+
+  .city-cover {
+    left: -2.1rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .city-cover {
+    top: 6rem;
+    left: -2rem;
+    height: 30rem !important;
+
+  }
+  .current-weather {
+    margin-top: -1rem !important;
+  }
+  #imgUrl {
+    min-height: 99%;
+  }
+  #form-field {
+    left: 4rem;
+
+    ::ng-deep .mat-form-field {
+      width: 13rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 2rem !important;
+    top: 43rem;
+
+  }
+  .badgeCity {
+    left: 2rem !important;
+    width: 13rem !important;
+
+  }
+  .badge {
+    right: 2rem !important;
+    width: 14rem !important;
+  }
+
+
+}
+
+@media (max-width: 590px) {
+  #imgUrl {
+    min-height: 97%;
+  }
+
+  .icons {
+    right: 5rem;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .badgeCity {
+    left: 2rem !important;
+    width: 12rem !important;
+
+  }
+  .badge {
+    right: 2rem !important;
+    width: 13rem !important;
+  }
+  .icons {
+    right: 4.5rem;
+  }
+  #form-field {
+    left: 4rem;
+
+    ::ng-deep .mat-form-field {
+      width: 12rem !important;
+    }
+  }
+
+}
+
+@media (max-width: 545px) {
+  #imgUrl {
+    min-height: 95%;
+  }
+  .badgeCity {
+    left: 1.5rem !important;
+    width: 12rem !important;
+
+  }
+  .badge {
+    right: 1.5rem !important;
+    width: 13rem !important;
+  }
+  .icons {
+    right: 4rem;
+  }
+  #form-field {
+    left: 3.5rem;
+
+    ::ng-deep .mat-form-field {
+      width: 12rem !important;
+    }
+  }
+
+}
+
+@media (max-width: 530px) {
+
+  .city-cover {
+    left: -1.8rem;
+    height: 27rem !important;
+
+    #icon {
+      margin-top: -2rem !important;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+  }
+  #imgUrl {
+    height: 100% !important;
+  }
+  .badgeCity {
+    left: 1.5rem !important;
+    width: 11.5rem !important;
+
+  }
+  .badge {
+    right: 1.5rem !important;
+    width: 12.5rem !important;
+  }
+  .icons {
+    right: 4rem;
+  }
+  #form-field {
+    left: 3.2rem;
+
+    ::ng-deep .mat-form-field {
+      width: 11.5rem !important;
+    }
+  }
+  .five-day-forecast {
+    top: 40rem !important;
+    left: 2rem !important;
+  }
+
+}
+
+@media (max-width: 510px) {
+
+  .city-cover {
+    left: -1.8rem;
+    height: 27rem !important;
+
+    #icon {
+      margin-top: -2rem !important;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+  }
+  #imgUrl {
+    height: 100% !important;
+  }
+  .badgeCity {
+    left: 1rem !important;
+    width: 11.5rem !important;
+
+  }
+  .badge {
+    right: 1rem !important;
+    width: 12.5rem !important;
+  }
+  .icons {
+    right: 3.5rem;
+  }
+  #form-field {
+    left: 2.7rem;
+
+    ::ng-deep .mat-form-field {
+      width: 11.5rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 1.6rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .city-cover {
+    left: -1.8rem;
+    height: 25rem !important;
+
+    #icon {
+      margin-top: -3rem !important;
+      width: 11rem;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+  }
+  #imgUrl {
+    height: 100% !important;
+  }
+  .badgeCity {
+    left: 1rem !important;
+    width: 11.5rem !important;
+
+  }
+  .badge {
+    right: 1rem !important;
+    width: 12.5rem !important;
+  }
+  .icons {
+    right: 3.5rem;
+  }
+  #form-field {
+    left: 2.7rem;
+
+    ::ng-deep .mat-form-field {
+      width: 11.5rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 1.7rem !important;
+    top: 39rem !important;
+    div {
+      div {
+        width: 17rem !important;
+      }
+    }
+  }
+
+  mat-toolbar-row{
+    height: 65rem !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .icons {
+    right: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .city-cover {
+    left: -1.7rem;
+    height: 23rem !important;
+
+    #icon {
+      margin-top: -3rem !important;
+      width: 9rem;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+
+    h2 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .badgeCity {
+    left: 0 !important;
+    width: 11.5rem !important;
+
+  }
+  .badge {
+    right: 0 !important;
+    width: 12.5rem !important;
+  }
+  .icons {
+    right: 2.5rem;
+  }
+  #form-field {
+    left: 1.7rem;
+
+    ::ng-deep .mat-form-field {
+      width: 11.5rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 1.7rem !important;
+    top: 37rem !important;
+
+    div {
+      div {
+        width: 16rem !important;
+      }
+    }
+  }
+  mat-toolbar-row{
+    height: 64rem !important;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .icons {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .city-cover {
+    left: -1.6rem;
+    height: 21rem !important;
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    #icon {
+      margin-top: -3rem !important;
+      width: 7.7rem;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+
+    h2 {
+      font-size: 1.3rem !important;
+    }
+  }
+  .weather-details {
+    div {
+      div {
+        p {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+
+  .badgeCity {
+    left: 0 !important;
+    width: 11rem !important;
+
+    div {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .badge {
+    right: 0 !important;
+    width: 12rem !important;
+
+    div {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .icons {
+    right: 2.5rem;
+  }
+  #form-field {
+    left: 1.7rem;
+
+    ::ng-deep .mat-form-field {
+      width: 11rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 1.6rem !important;
+    top: 35rem !important;
+
+    div {
+      div {
+        width: 14rem !important;
+      }
+    }
+  }
+  mat-toolbar-row{
+    height: 62rem !important;
+  }
+
+}
+@media (max-width: 430px) {
+
+  .city-cover {
+    left: -1.6rem;
+    height: 21rem !important;
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    #icon {
+      margin-top: -3rem !important;
+      width: 7.7rem;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+
+    h2 {
+      font-size: 1.3rem !important;
+    }
+  }
+  .weather-details {
+    div {
+      div {
+        p {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+
+  .badgeCity {
+    left: 0 !important;
+    width: 10rem !important;
+
+    div {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .badge {
+    right: 0 !important;
+    width: 11rem !important;
+
+    div {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .icons {
+    right: 1rem;
+  }
+  #form-field {
+    left: 1.3rem;
+    ::ng-deep .mat-form-field {
+      width: 10rem !important;
+    }
+  }
+  .five-day-forecast {
+    left: 1.5rem !important;
+    top: 35rem !important;
+
+    div {
+      div {
+        width: 13rem !important;
+      }
+    }
+  }
+  mat-toolbar-row{
+    height: 63rem !important;
+  }
+
+}
+@media (max-width: 400px) {
+
+  .city-cover {
+    left: -1.5rem;
+    height: 21rem !important;
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    #icon {
+      margin-top: -3rem !important;
+      width: 7.7rem;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+
+    h2 {
+      font-size: 1.3rem !important;
+    }
+  }
+  .weather-details {
+    div {
+      div {
+        p {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+
+  .badgeCity {
+    left: 0 !important;
+    width: 9.5rem !important;
+
+    div {
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+  .badge {
+    right: 0 !important;
+    width: 10rem !important;
+
+    div {
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+  .icons {
+    right: 1rem;
+  }
+  #form-field {
+    left: 1.3rem;
+    ::ng-deep .mat-form-field {
+      width: 9.5rem !important;
+
+      .mat-form-field-label {
+       font-size: .9rem;
+      }
+    }
+
+
+  }
+  .five-day-forecast {
+    left: 1.4rem !important;
+    top: 35rem !important;
+
+    div {
+      div {
+        width: 13rem !important;
+      }
+    }
+  }
+  mat-toolbar-row{
+    height: 63rem !important;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+
+  .five-day-forecast {
+    left: 1.3rem !important;
+    top: 35rem !important;
+
+    div {
+      div {
+        width: 13rem !important;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 370px) {
+
+  .city-cover {
+    left: -1.4rem;
+    height: 21rem !important;
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    #icon {
+      margin-top: -3rem !important;
+      width: 7.7rem;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+
+    h2 {
+      font-size: 1.3rem !important;
+    }
+  }
+  .weather-details {
+    div {
+      div {
+        p {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+
+  .badgeCity {
+    left: 0 !important;
+    width: 9.5rem !important;
+
+    div {
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+  .badge {
+    right: 0 !important;
+    width: 9.5rem !important;
+
+    div {
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+  .icons {
+    right: 1rem;
+  }
+  #form-field {
+    left: 1.3rem;
+    ::ng-deep .mat-form-field {
+      width: 9.5rem !important;
+
+      .mat-form-field-label {
+        font-size: .9rem;
+      }
+    }
+
+
+  }
+  .five-day-forecast {
+    left: 1.3rem !important;
+    top: 34rem !important;
+
+    div {
+      div {
+        width: 13rem !important;
+      }
+    }
+  }
+  mat-toolbar-row{
+    height: 61rem !important;
+  }
+
+}
+@media (max-width: 360px) {
+
+  .city-cover {
+    left: -1.4rem;
+    height: 21rem !important;
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    #icon {
+      margin-top: -3rem !important;
+      width: 7.7rem;
+    }
+  }
+  .current-weather {
+    margin-top: -2rem !important;
+
+    h2 {
+      font-size: 1.3rem !important;
+    }
+  }
+  .weather-details {
+    div {
+      div {
+        p {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+
+  .badgeCity {
+    left: 0 !important;
+    width: 9.5rem !important;
+
+    div {
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+  .badge {
+    right: 0 !important;
+    width: 9.5rem !important;
+
+    div {
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+  .icons {
+    right: .5rem;
+  }
+  #form-field {
+    left: 1.3rem;
+    ::ng-deep .mat-form-field {
+      width: 9.4rem !important;
+
+      .mat-form-field-label {
+        font-size: .9rem;
+      }
+    }
+
+
+  }
+  .five-day-forecast {
+    left: 1.3rem !important;
+    top: 34rem !important;
+
+    div {
+      div {
+        width: 13rem !important;
+      }
+    }
+  }
+  mat-toolbar-row{
+    height: 63rem !important;
+  }
+
+}
